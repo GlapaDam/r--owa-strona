@@ -1,0 +1,172 @@
+.contact {
+    padding: 20px 0 20px 0;
+    background-color: $contactBackroundColor;
+    display: flex;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+
+
+    .box {
+        width: 25%;
+        align-items: center;
+
+        .box-bg {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            padding: 0 50px 0 50px;
+
+
+            .header {
+                width: 100%;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 12px;
+            }
+
+            a img {
+                width: 100px;
+                margin: 0 25px 0 25px;
+            }
+
+            .lorem {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .media {
+
+
+
+                a {
+                    margin: left;
+
+
+
+                    i {
+                        color: $projectIconColor;
+                        position: relative;
+                        color: $projectIconColor;
+                        margin: 10px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $projectPhotoOverlayColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            display: block;
+            text-decoration: none;
+            color: $primaryTextColor;
+            font-size: 12px;
+            font-family: $mainFontFamily;
+            margin: 0 auto;
+            text-align: left;
+
+            p {
+                margin: 0 auto;
+            }
+
+            a {
+                color: $primaryTextColor;
+                text-decoration: underline;
+            }
+        }
+
+        .links {
+            margin: 20px;
+
+            a {
+
+                display: block;
+                text-decoration: none;
+                color: $primaryTextColor;
+                font-size: 12px;
+                font-family: $mainFontFamily;
+
+            }
+
+        }
+
+
+
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 15px;
+
+            .project {
+                width: calc(100%/3);
+                padding: 0 15px;
+
+
+                .photo {
+
+
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        margin: 0 auto;
+                        bottom: 15%;
+                        left: 0;
+                        height: 25%;
+                        width: 100%;
+                        background-color: $primaryTextColor;
+                        opacity: 0;
+
+
+                    }
+
+                    &:hover::after {
+                        opacity: 0.7;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+
+
+                    }
+
+                    i {
+
+                        position: absolute;
+                        bottom: 15%;
+                        left: 35%;
+                        color: $projectIconColor;
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        & ::after {
+                            content: "";
+                            opacity: 1;
+                        }
+
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}

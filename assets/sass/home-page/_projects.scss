@@ -1,0 +1,137 @@
+.projects {
+    background-color: $projectBackgroundColor;
+    padding: 100px 0 70px;
+
+    .container {
+
+        h5 {
+            font-size: 12px;
+            color: #939393;
+            margin: 0 0 15px;
+            text-align: center;
+            font-weight: 400;
+
+        }
+
+        h2 {
+            @include fluid-type(20px, 32px);
+            text-align: center;
+            margin: 0 auto 50px;
+            width: 50%;
+            font-family: $headerFontFamily;
+
+            @media(max-width: 992px) {
+                width: 100%;
+            }
+        }
+
+        .box-projects {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 15px;
+
+            .project {
+                width: calc(100%/3);
+                padding: 0 15px;
+
+                @media(max-width: 992px) {
+                    width: 50%;
+                }
+
+                @media(max-width: 600px) {
+                    width: 100%;
+                }
+
+                .photo {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $projectPhotoOverlayColor;
+                        opacity: 0;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:hover::after {
+                        opacity: 0.7;
+                    }
+
+                    &:hover a {
+                        opacity: 1;
+                    }
+
+
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        width: 46px;
+                        height: 46px;
+                        font-size: 25px;
+                        color: $projectSecondaryIconColor;
+                        background-color: $projectSecondaryIconColor;
+                        border: 2px solid $projectSecondaryIconColor;
+                        border-radius: 50%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 3;
+                        opacity: 0;
+                        transition: 1s;
+
+                        &:first-of-type {
+                            left: calc(50% - 61px);
+                        }
+
+                        &:last-of-type {
+                            left: calc(50% + 15px);
+                        }
+                    }
+
+
+                    i {
+                        align-items: center;
+                        color: $projectPrimaryColor;
+                    }
+
+
+
+                    .project-info {
+                        background-color: $projectIconColor;
+                    }
+                }
+
+                .project-info {
+                    background-color: $secondaryColor;
+
+                    .title {
+                        text-align: center;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-family: $headerFontFamily;
+                        margin: 10px auto;
+                        font-weight: 600;
+
+                    }
+
+                    .genere {
+                        text-align: center;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        color: $primaryColor;
+                        margin: 10px auto;
+                    }
+                }
+            }
+        }
+    }
+}
