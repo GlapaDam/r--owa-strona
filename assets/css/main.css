@@ -1335,6 +1335,12 @@ section.slider .slide p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .box .gallery .project {
@@ -1383,4 +1389,97 @@ section.slider .slide p {
 .contact .box .gallery .project .photo i ::after {
   content: "";
   opacity: 1;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.nav .wrapper .logo {
+  margin: -30px 0 0 120px;
+}
+
+.nav .wrapper .logo img {
+  height: 20px;
+}
+
+.nav .wrapper .menu {
+  padding: 10px 20px 10px 0;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: right;
+}
+
+.nav .wrapper .menu .active {
+  color: #fff;
+}
+
+.nav .wrapper .menu .active span {
+  margin: 0 50px;
+}
+
+.nav .wrapper .menu li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.nav .wrapper .menu a {
+  padding: 0 10px 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .wrapper .menu a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav .wrapper .hamburger {
+  padding: 3px;
+  width: 22px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  outline: none;
+  margin: 0 auto;
+}
+
+.nav .wrapper .hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.nav .wrapper .hamburger span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+
+.nav .wrapper .hamburger span:nth-of-type(2) {
+  top: 50%;
+  left: 0;
+  height: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav .wrapper .hamburger span:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
 }

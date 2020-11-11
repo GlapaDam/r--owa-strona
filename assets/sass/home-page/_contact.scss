@@ -2,7 +2,6 @@
     padding: 20px 0 20px 0;
     background-color: $contactBackroundColor;
     display: flex;
-
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #6f6f6f;
@@ -106,6 +105,8 @@
             display: flex;
             flex-wrap: wrap;
             margin: 0 15px;
+            align-items: center;
+            justify-content: center;
 
             .project {
                 width: calc(100%/3);
@@ -159,13 +160,8 @@
                             content: "";
                             opacity: 1;
                         }
-
                     }
-
-
                 }
-
-
             }
         }
     }
