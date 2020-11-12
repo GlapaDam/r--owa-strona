@@ -19,6 +19,47 @@ section.slider {
         }
     }
 
+    .buttons {
+        position: relative;
+
+        a.btn {
+            position: absolute;
+            background-color: $navigationBackgroundColor;
+            color: $projectIconColor;
+            border-radius: 30px;
+            padding: 10px 20px;
+
+            &:hover {
+                color: $projectPrimaryColor;
+                background-color: $secondaryColor;
+                border-style: solid;
+                padding: 8px 16px;
+            }
+
+        }
+
+        a.btn.border {
+            position: absolute;
+            left: 120px;
+            color: $projectPrimaryColor;
+            background-color: $secondaryColor;
+            border-style: solid;
+            padding: 8px 16px;
+
+
+            &:hover {
+                background-color: $navigationBackgroundColor;
+                color: $projectIconColor;
+                border-radius: 30px;
+                padding: 10px 20px;
+
+
+
+            }
+        }
+    }
+
+
     .slide {
         min-height: 100vh;
         background-repeat: no-repeat;

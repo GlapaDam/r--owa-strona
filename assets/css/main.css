@@ -645,6 +645,41 @@ section.slider .owl-dots .owl-dot.active span {
   background-color: #000000;
 }
 
+section.slider .buttons {
+  position: relative;
+}
+
+section.slider .buttons a.btn {
+  position: absolute;
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+section.slider .buttons a.btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-style: solid;
+  padding: 8px 16px;
+}
+
+section.slider .buttons a.btn.border {
+  position: absolute;
+  left: 120px;
+  color: #000000;
+  background-color: #ffffff;
+  border-style: solid;
+  padding: 8px 16px;
+}
+
+section.slider .buttons a.btn.border:hover {
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
 section.slider .slide {
   min-height: 100vh;
   background-repeat: no-repeat;
